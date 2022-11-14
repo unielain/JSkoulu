@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Play, sans-serif;
+    src: url(Play-Regular.ttf) format("ttf");
+}
+html {
+    font-family: Play, sans-serif;
+
+}
+ h1 {
+     color: #F63E02;
+ }
