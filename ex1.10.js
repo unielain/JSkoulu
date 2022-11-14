@@ -11,17 +11,19 @@ const number_of_dice = parseInt(prompt(`Give a number of dice: `))
 const sum_of_the_eye = parseInt(prompt(`Give a sum of the eyes: `))
 let roll_sum = 0;
 let num = 0;
-for (let i = 0; i < 1000; i++){
+let roll;
+
+for (let i = 0; i < 10000; i++){
     for (let f = 0; f < number_of_dice; f++){
-        roll = Math.floor(Math.random()*7) +1
-        roll_sum += roll
+        roll = (Math.floor(Math.random()*7)+1);
+        roll_sum += roll;
     }
         if(roll_sum === sum_of_the_eye){
-            num++
+            num++;
     }
-    roll_sum = 0
+    roll_sum = 0;
 }
 
-let propability = (num / 1000) * 100
-answer = `Probability to get sum ${sum_of_the_eye} with ${number_of_dice} dice is ${propability}%`
+let probability = Math.round((num / 10000) * 100);
+answer = `Probability to get sum ${sum_of_the_eye} with ${number_of_dice} dice is ${probability}%`
 document.getElementById("ex").innerHTML = answer;

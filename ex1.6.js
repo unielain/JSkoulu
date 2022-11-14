@@ -1,8 +1,7 @@
-    let answer
-    let calculate = confirm(`Should I calculate the square root?`)
+    let answer;
+    const calculate = confirm(`Should I calculate the square root?`);
     if (calculate === true) {
-        let number = prompt(`Give a positive number: `)
-        number = parseInt(number)
+        const number = parseInt(prompt(`Give a positive number: `));
         if (number > 0) {
             answer = Math.sqrt(number)
         } else {

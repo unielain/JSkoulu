@@ -1,10 +1,19 @@
 /*
-A simple program that draws two numbers on a dice.
-Prints the drawn numbers and their sum
+a simple program that prompts the user for three integer numbers
+and calculates the sum, product and average of the numbers
  */
 
-let first_dice = Math.floor(Math.random()*6) +1;
-let second_dice = Math.floor(Math.random()*6) +1;
-let sum_of_dice = parseInt(first_dice) + parseInt(second_dice);
+const number1 = parseInt(prompt("first number: "));
+const number2 = parseInt(prompt("second number: "));
+const number3 = parseInt(prompt("third number: "));
+document.querySelector("#numbers").innerHTML = `${number1}, ${number2}, ${number3}`;
 
-console.log(`The first number: ${first_dice}\nThe second dice: ${second_dice}\nThe sum of dice: ${sum_of_dice}`)
+const sum = (number1 + number2 + number3);
+document.querySelector("#sum").innerHTML = `${sum}`;
+
+const product = (number1 * number2 * number3);
+document.querySelector("#product").innerHTML = `${product}`;
+
+const average = (sum / 3);
+document.querySelector("#average").innerHTML = `${average}`;
+

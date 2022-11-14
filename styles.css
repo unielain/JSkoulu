@@ -6,6 +6,45 @@ html {
     font-family: Play, sans-serif;
 
 }
+body {
+    padding: 3em;
+    font-family: Play, sans-serif;
+    text-align: center;
+}
  h1 {
      color: #F63E02;
+
  }
+ .exinfo {
+     border: #75F4F4 0.3em solid;
+
+     padding: 0.3em;
+ }
+
+table {
+    border: #75F4F4 0.3em solid;
+    width: 100%;
+}
+
+tr {
+    border: #27474E 0.01em dotted;
+}
+b {
+    color: #F63E02;
+}
+
+td {
+    border: #27474E 0.01em dotted;
+    padding: 0.3em;
+}
+ul {
+    list-style-type: square;
+    color: #432534;
+    padding: 0;
+    list-style-position: inside;
+}
+
+pre code {
+    text-align: left;
+    display: block;
+}

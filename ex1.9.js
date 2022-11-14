@@ -4,9 +4,11 @@ For example, number 13 is a prime number as it can only be divided by 1 or 13 so
 On the other hand, number 21 for example is not a prime number as it can be also be divided by numbers 3 and 7.
 Print the result on the HTML document.*/
 
-const number = parseInt(prompt(`Give a number: `))
-let test_number
-let test_number2
+const number = parseInt(prompt(`Give a number: `));
+let test_number;
+let test_number2;
+let result;
+
 for(let i = 2; i < 10; i ++){
     if ((i !== number) && (number % i === 0)){
         test_number = 5;
@@ -14,8 +16,13 @@ for(let i = 2; i < 10; i ++){
         test_number2 = 1;
     }
 }
+
 if (test_number > 2){
-    console.log(`${number} is not a prime number`)
+    result = `${number} is not a prime number`;
+
 } else {
-    console.log(`${number} is a prime number`)
+    result = `${number} is a prime number`;
 }
+
+console.log(result);
+document.querySelector("#result").innerHTML = result;
