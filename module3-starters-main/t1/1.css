@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Play", sans-serif;
+  src: local("Play"),
+  url("../../Play-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Play", sans-serif;
+}
+.my-list {
+  background-color: rgb(211, 62, 62);
+  color: #fff;
+}
